@@ -31,7 +31,7 @@ function Login() {
 
       navigate("/");
     } catch (err) {
-      setError(err.response.data);
+      setError(err?.response?.data.message);
     } finally {
       setIsLoading(false);
     }
